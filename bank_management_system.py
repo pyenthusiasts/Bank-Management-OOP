@@ -12,7 +12,7 @@ class BankAccount(ABC):
     account_holder : str
         The name of the account holder.
     balance : float
-        The current balance of the account.
+        The current balance of the account. 
     """
 
     def __init__(self, account_number, account_holder, initial_balance=0.0):
