@@ -1,0 +1,23 @@
+# Code owners for Bank Management System
+
+# Default owners for everything in the repo
+*       @pyenthusiasts
+
+# Core package code
+/bank_management/       @pyenthusiasts
+
+# Tests
+/tests/                 @pyenthusiasts
+
+# Documentation
+/docs/                  @pyenthusiasts
+README.md              @pyenthusiasts
+CONTRIBUTING.md        @pyenthusiasts
+
+# CI/CD
+/.github/               @pyenthusiasts
+
+# Package configuration
+setup.py               @pyenthusiasts
+setup.cfg              @pyenthusiasts
+pyproject.toml         @pyenthusiasts

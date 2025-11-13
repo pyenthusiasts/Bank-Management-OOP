@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  bank-management:
+    build: .
+    image: bank-management-oop:latest
+    container_name: bank-management-app
+    volumes:
+      - ./bank_data.json:/app/bank_data.json
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    command: python -m bank_management.cli
+
+  # Example service for running demo
+  demo:
+    build: .
+    image: bank-management-oop:latest
+    container_name: bank-management-demo
+    command: python demo.py
+
+  # Example service for running tests
+  test:
+    build: .
+    image: bank-management-oop:latest
+    container_name: bank-management-test
+    command: pytest tests/ -v

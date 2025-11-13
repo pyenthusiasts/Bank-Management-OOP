@@ -1,0 +1,3 @@
+# Bank Management System - Requirements
+# No external dependencies required for core functionality
+# Python 3.7+ standard library is sufficient
